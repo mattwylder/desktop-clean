@@ -1,0 +1,17 @@
+#!/bin/bash
+#Downloads cleaner
+
+cd ~/Downloads
+
+#Other
+alias mute="> /dev/null 2>&1"
+
+#TODO: only run if there are files of those types
+mv *.jpg *.png *.gif ~/Pictures 
+mv *.odt *.doc *.docx *.pdf ~/Documents 
+mv *.mp3 *.wav *.ogg *.flac ~/Music 
+mv *.mkv *.mp4 ~/Videos
+mv *.jar ~/Code/jar
+
+#TODO: Conditional?
+echo "Downloads Cleaned"
